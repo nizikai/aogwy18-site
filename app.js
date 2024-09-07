@@ -227,22 +227,22 @@ window.onload = function() {
   
     poof();
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const homeOverlay = document.querySelector('.home-overlay');
-        const homeSection = document.querySelector('#home');
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const homeOverlay = document.querySelector('.home-overlay');
+    //     const homeSection = document.querySelector('#home');
         
-        function checkScroll() {
-            const scrollPosition = window.scrollY || window.pageYOffset;
-            const triggerHeight = window.innerHeight;
+    //     function checkScroll() {
+    //         const scrollPosition = window.scrollY || window.pageYOffset;
+    //         const triggerHeight = window.innerHeight;
     
-            if (scrollPosition >= triggerHeight) {
-                homeOverlay.classList.add('visible');
-            } else {
-                homeOverlay.classList.remove('visible');
-            }
-        }
+    //         if (scrollPosition >= triggerHeight) {
+    //             homeOverlay.classList.add('visible');
+    //         } else {
+    //             homeOverlay.classList.remove('visible');
+    //         }
+    //     }
     
-        checkScroll();
-        window.addEventListener('scroll', checkScroll);
-    });
+    //     checkScroll();
+    //     window.addEventListener('scroll', checkScroll);
+    // });
 };
