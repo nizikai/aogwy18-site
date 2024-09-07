@@ -2,3 +2,49 @@ html {
     scroll-behavior: smooth;
     background-color: black;
 }
+
+#intro {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro img {
+    max-width: 30vmax;
+    opacity: 0;
+    animation: blur 2s ease-out forwards;
+}
+
+.home-overlay{
+    max-width: 10vmin; 
+        /* position: fixed; or absolute depending on your layout */
+        top: 0;
+        left: 0;
+        width: 100%; /* Adjust as needed */
+        height: 100%; /* Adjust as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0; /* Initial state */
+        transition: opacity 0.5s ease-in-out;
+}
+
+.home-overlay.visible {
+    opacity: 1;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(5px);
+        scale: 0.8;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+        filter: blur(0px);
+    }
+}
