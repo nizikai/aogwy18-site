@@ -1,6 +1,12 @@
 html {
     scroll-behavior: smooth;
     background-color: black;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    margin: 0;     
+    padding: 0;      
 }
 
 #intro {
@@ -16,6 +22,7 @@ html {
     max-width: 35vmax;
     opacity: 1;
     animation: blur 2s ease-out forwards;
+    pointer-events: none;
 }
 
 @keyframes blur {
@@ -31,11 +38,25 @@ html {
     }
 }
 
-:root {
-    --gap: 2rem;
-  }
+#full-images {
+    width: 100%; 
+    margin: 0;      
+    padding: 0;      
+}
 
-.marquee {
+#full-images img {
+    max-width: 100%;  
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+    pointer-events: none;
+}
+
+/* :root {
+    --gap: 2rem;
+  } */
+
+/* .marquee {
     overflow: hidden;
     user-select: none;
     display: flex;
@@ -68,4 +89,4 @@ html {
     to {
       transform: translateX(calc(-100% - var(--gap)));
     }
-  }
+  } */
