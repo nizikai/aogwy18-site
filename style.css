@@ -19,7 +19,7 @@ body {
 }
 
 #intro img {
-    max-width: 35vmax;
+    max-width: 37vmax;
     opacity: 1;
     animation: blur 2s ease-out forwards;
     pointer-events: none;
